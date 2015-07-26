@@ -21,4 +21,12 @@ The 'raw' data returned by the Flir API has been upsamples to produce a 320 by 2
 
 Dependencies:  an iPhone with a gyroscope sensor supporting better than 0.1 degree resolution (needed because of field of view of one pixel is around 0.25 degree).
 
+./enhance image_1 image_2
+
+creates image_out.bin
+x/y rotation between images currently hardcoded in enhance.c
+
+show.py image_out.bin # very susceptable to extreme pixel values killing image quality
+
+show.R # image quality robust in the presence of extreme pixel values
 

@@ -1,7 +1,7 @@
 
 # show.R, 21 Jul 15
 
-im = file("~/flir/image_out.bin", "rb")
+im = file("~/clarify-the-heat/image_out.bin", "rb")
 im_d=readBin(im, integer(), n=1e9, size= 2, endian = "little")
 im1=matrix(im_d, ncol =2*320, nrow=2*240)
 
